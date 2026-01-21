@@ -1,0 +1,13 @@
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\config\DataLoader.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\config\RabbitMQConfig.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\controller\InventoryController.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\dto\ProductStockResponseDto.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\InventoryServiceApplication.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\messaging\OrderCreatedConsumer.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\messaging\OrderCreatedEvent.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\messaging\StockEventProducer.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\messaging\StockResponseEvent.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\model\Product.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\repository\ProductRepository.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\service\impl\InventoryServiceImpl.java
+C:\ESPE\AplicacionesDistribuidas\Proyecto\control-lectura\inventory-service\src\main\java\ec\edu\espe\inventory_service\service\InventoryService.java
