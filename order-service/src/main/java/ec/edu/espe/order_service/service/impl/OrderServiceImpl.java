@@ -25,6 +25,14 @@ public class OrderServiceImpl implements OrderService {
     private final OrderEventProducer orderEventProducer;
 
     @Override
+    public List<OrderResponseDto> getAllOrders() {
+        List<Order> orders = orderRepository.findAll();
+        return orders.stream()
+                .map(this::mapOrderToResponseDto)
+                .collect(Collectors.toList());
+    }
+
+    @Override
     @Transactional
     public OrderResponseDto createOrder(OrderRequestDto request) {
         Order order = Order.builder()
@@ -64,7 +72,10 @@ public class OrderServiceImpl implements OrderService {
     public OrderResponseDto getOrderById(UUID orderId) {
         Order order = orderRepository.findById(orderId)
                 .orElseThrow(() -> new RuntimeException("Order not found with ID: " + orderId));
+        return mapOrderToResponseDto(order);
+    }
 
+    private OrderResponseDto mapOrderToResponseDto(Order order) {
         List<OrderItemResponseDto> items = order.getItems().stream()
                 .map(item -> OrderItemResponseDto.builder()
                         .productId(item.getProductId())

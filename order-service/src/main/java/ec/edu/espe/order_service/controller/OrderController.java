@@ -18,6 +18,12 @@ public class OrderController {
 
     private final OrderService orderService;
 
+    @GetMapping
+    public ResponseEntity<java.util.List<OrderResponseDto>> getAllOrders() {
+        java.util.List<OrderResponseDto> orders = orderService.getAllOrders();
+        return ResponseEntity.ok(orders);
+    }
+
     @PostMapping
     public ResponseEntity<OrderResponseDto> createOrder(@Valid @RequestBody OrderRequestDto request) {
         OrderResponseDto response = orderService.createOrder(request);
